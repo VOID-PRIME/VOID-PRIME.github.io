@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Java基础知识回顾 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="写在前面 此笔记仅是方便个人复习回想时,我单身二十余载,习惯了独处自言自语,打字写日记也是如此,我习惯于用教别人的视角写给自己看,如果这个教程能说服我自己,那我就学会了其中表明的内容,内含废话较多,特别是这种可以被别人看见的玩意,(你写日记吗,我不写,正经人谁写日记啊) 也请诸位大神高抬贵手不要搞绑架勒索攻击测试,我都把这玩意推上github.io了,可想而知,我连一年两百块的服务器都租不起,您就">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java基础知识回顾">
+<meta property="og:url" content="http://example.com/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="写在前面 此笔记仅是方便个人复习回想时,我单身二十余载,习惯了独处自言自语,打字写日记也是如此,我习惯于用教别人的视角写给自己看,如果这个教程能说服我自己,那我就学会了其中表明的内容,内含废话较多,特别是这种可以被别人看见的玩意,(你写日记吗,我不写,正经人谁写日记啊) 也请诸位大神高抬贵手不要搞绑架勒索攻击测试,我都把这玩意推上github.io了,可想而知,我连一年两百块的服务器都租不起,您就">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-12-08T07:00:09.000Z">
+<meta property="article:modified_time" content="2021-12-17T13:37:46.748Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="JavaSE,学习笔记">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-未完成编辑/Java基础知识回顾" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/" class="article-date">
+  <time class="dt-published" datetime="2021-12-08T07:00:09.000Z" itemprop="datePublished">2021-12-08</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Java基础知识回顾
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><ol>
+<li>此笔记仅是方便个人复习回想时,我单身二十余载,习惯了独处自言自语,打字写日记也是如此,我习惯于用教别人的视角写给自己看,如果这个教程能说服我自己,那我就学会了其中表明的内容,<br>内含废话较多,特别是这种可以被别人看见的玩意,(你写日记吗,我不写,正经人谁写日记啊)</li>
+<li>也请诸位大神高抬贵手不要搞绑架勒索攻击测试,我都把这玩意推上github.io了,可想而知,我连一年两百块的服务器都租不起,您就当我是个屁,放我一马吧,我的钱都用来吃饭了,兜比脸干净</li>
+<li>如果你是和我一样自学的小白,那么很显然,你过于倒霉以至于找到另一个小白的笔记,如果感觉内容有用,那么我很荣幸”可 能”帮到了您,如果坑了您,请别生气,把具体问题发送到此邮箱<a href></a>,让我们一起纠错进步</li>
+</ol>
+<hr>
+<h1 id="Java语言跨平台特性的来源"><a href="#Java语言跨平台特性的来源" class="headerlink" title="Java语言跨平台特性的来源"></a>Java语言跨平台特性的来源</h1><h2 id="利用JVM–Java虚拟机-隔离代码和不同操作系统-不同硬件设备-一次编写代码即可运行在各种机器上-大幅减小移植工作量"><a href="#利用JVM–Java虚拟机-隔离代码和不同操作系统-不同硬件设备-一次编写代码即可运行在各种机器上-大幅减小移植工作量" class="headerlink" title="利用JVM–Java虚拟机,隔离代码和不同操作系统/不同硬件设备,一次编写代码即可运行在各种机器上,大幅减小移植工作量."></a>利用JVM–Java虚拟机,隔离代码和不同操作系统/不同硬件设备,一次编写代码即可运行在各种机器上,大幅减小移植工作量.</h2><h1 id="Java开发工具包下载及安装"><a href="#Java开发工具包下载及安装" class="headerlink" title="Java开发工具包下载及安装"></a>Java开发工具包下载及安装</h1><p>JDK17下载地址<a target="_blank" rel="noopener" href="https://www.oracle.com/java/technologies/downloads/#jdk17-windows">点我进甲骨文官网</a>我复制此链接的日期:2021-12-08.<br>上面的链接指向JDK17下载地址,甲骨文时不时更新官网页面,如果你不幸被搜索引擎引导至我这里,你可能会好奇为毛我给是JDK17而不是Java8,<br>很简单,反正人家向下兼容,下最新版就是了,学习而已,又不是接手老项目怕什么新版BUG.<br>JDK安装教程:上面地址指向windows安装版,进入页面点击下载.exe版的安装包就行,一路下一步就行,PATH变量配置,我也是百度搜索,安装包也会自动配置,如果没有自动配置,就百度一下照做吧(搜索建议:java Path环境变量设置).</p>
+<hr>
+<h1 id="Java基础概念"><a href="#Java基础概念" class="headerlink" title="Java基础概念"></a>Java基础概念</h1><p>电脑如同一个刚出生的婴儿,它有着近乎超人的力量与无穷的可能性,并且不同于人类的双核校验单线程,电脑的多CPU核心允许它同时做好几件事,因此,若想让电脑听从我们的指示做些什么,那就必须像和儿童说话一样,讲清楚每一步的操作,并遵循婴语语法,<br>面对复杂任务你还要指明一条命令应该由哪一个肢体执行并在什么样的状况下由另一个肢体进行必要的辅助,编程既像是全手动操控复杂的木偶,又像是规划组织自动化生产任务.<br>有时你亲自指挥某个工作,有时你指挥某个人使用某项工具做某件事,有时你指挥某家工厂产出什么东西提供给另一家工厂作为生产设备为你服务,<br>有时你指挥工厂之间吞并重组,被吞并的小工厂作为大工厂子公司,然后无数这样的复合工厂组成集团以达到某个目的<br>这样说,你就不会对后续各种,诸如把一个类作为一个方法的参数,一个方法作为另一个方法的参数,一个类里有好几个其他的类,一个类里的方法可以跨越好几个不同的类去调用另一个类里的方法或数值等等,这类奇怪的操作感到违,感到反直觉,<br>所以记住,最后都是套娃和叠叠乐,有些看起来不必要的操作和规则,都是为了后续的扩展性以及针对大型组织结构的协同运作所准备的,高达背后看起来不协调的各种凸起,实际是设计师为了后续搭载新装备所留下的接口插头和挂载点</p>
+<p>下列演示代码,以EVE游戏中的舰船为例,围绕舰船,展示关于类,内部类,方法,访问修饰词,封装,继承,接口,多态,”static/final/this/super”关键字等java入门知识,如有缺少或错误或不合理,欢迎发送了留言至此邮箱,感谢帮我进步</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">abstract</span> <span class="class"><span class="keyword">class</span> 舰船</span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> 舰船(动力装置 主动力系统,动力装置 应急动力装置,String 船级)</span><br><span class="line">    &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">private</span> 动力装置 主动力系统;</span><br><span class="line">    <span class="keyword">private</span> 动力装置 应急动力装置;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">final</span> String 船级;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 常规航行方式();</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 超光速航行方式();</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> set主动力系统(动力装置)</span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 常规舰船 <span class="title">extend</span> 舰船</span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> 最大质量限制 = <span class="number">100000000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 乌鸦级战列舰 <span class="title">extend</span> 常规舰船 <span class="title">implments</span> 导弹基座接口,炮塔基座接口</span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    String 操作说明书 = <span class="number">0x964634355</span>;</span><br><span class="line">    String 船级社图纸编号 = <span class="number">0x177644564</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> 裸装质量 = <span class="number">585500</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">double</span> 蛋人通用广播频道 = <span class="number">114.514</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 导弹基座三千伏恒压直流供电协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;整流桥式三千伏恒压供电&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 导弹基座<span class="number">20</span>吨级供弹协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;双电梯式20吨级供弹&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 导弹基座控制协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;常规有线式控制,遵从A型信息格式&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 炮塔基座三千伏恒压直流供电协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;脉冲式三千伏恒压供电&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 炮塔基座<span class="number">20</span>吨级供弹协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;双电梯式50吨级供弹&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> 炮塔基座控制协议()</span><br><span class="line">    &#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;常规有线式控制,遵从B型信息格式&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> 逃生护卫舰</span></span><br><span class="line"><span class="class">    </span>&#123;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> 常规飞行()</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;飞行&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">void</span> 跃迁飞行()</span><br><span class="line">        &#123;</span><br><span class="line">            System.out.println(<span class="string">&quot;跃迁引擎启动&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">public</span> 蛋 逃生弹射()</span><br><span class="line">        &#123;</span><br><span class="line">            蛋 一号蛋 = <span class="keyword">new</span> 蛋();</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>号蛋;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">private</span> <span class="class"><span class="keyword">class</span> 蛋</span></span><br><span class="line"><span class="class">        </span>&#123;</span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> 常规飞行()</span><br><span class="line">            &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;飞行&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">public</span> <span class="keyword">void</span> 跃迁飞行()</span><br><span class="line">            &#123;</span><br><span class="line">                System.out.println(<span class="string">&quot;跃迁引擎启动&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> 魔像级掠夺舰 <span class="title">extend</span> 乌鸦级战列舰 <span class="title">implments</span> 导弹基座接口,堡垒装备安装接口</span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    String 操作说明书 = <span class="number">0x32434352</span>;</span><br><span class="line">    String 船级社图纸编号 = <span class="number">0x4354433</span>;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> 裸装质量 = <span class="number">665500</span>;</span><br><span class="line">    <span class="comment">//final double 蛋人通用广播频道 = 114.514;</span></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">爆裂 遥控器 = <span class="keyword">new</span> 爆裂();</span><br><span class="line">遥控器.弹药数 = <span class="number">100</span>;</span><br><span class="line">爆裂 引线 = <span class="keyword">new</span> 爆裂();</span><br><span class="line">引线.弹药数 = <span class="number">170</span>;</span><br><span class="line">遥控器.helloWorld();</span><br><span class="line">引线.bomb(<span class="string">&quot;假装是密码&quot;</span>);</span><br></pre></td></tr></table></figure>
+<p>“public class 爆裂”是包含了两个方法的类<br>“class”指类/类型/级,类是一个设计图,一般里面有一些方法,也可能是空的,如果感觉这名字别扭,不用管他,翻译就这样,现在流传开也改不了,认命吧.</p>
+<p>最后四行使用”爆裂”这个类/这个设计图,创建了一个叫遥控器一个叫引线的玩意—“玩意”这两个字学术点叫对象/实体/实例.<br>不管叫什么,反正你用一张叫”爆裂”的设计图,创建了一个叫遥控器的玩意,或者如果你是军迷,你可以理解为一艘叫遥控器号的爆裂级战舰,<br>你还给它上了一百单位弹药.另一艘叫引线的上了170单位弹药.</p>
+<p>首先介绍 一.修饰符<br>public defalut protected private 这四种修饰符用于修饰指令应用范围,或指明某一样工具可由谁使用<br>public 如同全频道广播应用范围最广,指明某项工具或某家工厂谁都可以用<br>defalut 则是默认范围,指明某项工具由默认能用的人使用,比如一台内部狭小的小型坦克,大家虽然都看得见摸得着,但很显然只有会开坦克且身材合适的人,才能坐进去驾驶<br>而后两种翻译过来一个是”受保护的”,一个是”私有的”,例如你的工资,虽然钱的类型是黄金,大家都能接受,但显然最好设置成private,<br>而装钱的钱包和保险柜容器,虽然你老婆也能碰,但还是设置”protected”,限制可接触的人员,以免遭贼,或是被还不会说话小孩拿走毕生积蓄只换了俩气球</p>
+<p>其次介绍二.类型<br>类型有值的类型,变量的类型,方法返回值的类型,类的类型等等.具体可以去这里看<a target="_blank" rel="noopener" href="https://www.runoob.com/java/java-basic-datatypes.html">菜鸟教程</a></p>
+<ol>
+<li>值的类型很好理解,<br> 比如一个数是整数”int”,还是双精度小数”double”,还是一个用来存储好几个文字的字符串”String”,或者一个存储单个文字的字符”char”等等,有好几种,</li>
+<li>变量类型有基本类型和引用类型,<br> 基本类型就是系统自带的一些值类型,如同发给一个人的工具或钱,你可以直接放身上随时用,比如一把锤子或两百纸币,这个人身上的空间被称为”栈”,随来随走的轻便客栈的栈字.<br> 引用类型是字符串或一个类,也就是说,发给一个人的东西并不在他身上,而是在”堆”这个仓库里,这个人的身上只有一个写了仓库位置的纸条,”String”也是引用类型,为什么几个字和只有几行代码的类还要放仓库里,<br> 因为实际的应用情况是,发给你的不是写着联系方式的小卡片,而是数以吨计的设计图纸或是上千个类组成的自动化协作工厂</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/" data-id="ckxwza4bn0004gkox5sq4fpd7" data-title="Java基础知识回顾" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaSE-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">JavaSE,学习笔记</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          计算机网络基础知识001
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/12/06/BlogTest001/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">BlogTest001</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaSE-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">JavaSE,学习笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" rel="tag">博客测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">计算机网络基础知识</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/JavaSE-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">JavaSE,学习笔记</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">博客测试</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 10px;">计算机网络基础知识</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/">计算机网络基础知识001</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/">Java基础知识回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/06/BlogTest001/">BlogTest001</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/06/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

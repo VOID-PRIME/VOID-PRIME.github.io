@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>计算机网络基础知识001 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="引用“https:&#x2F;&#x2F;www.runoob.com&#x2F;w3cnote&#x2F;summary-of-network.html&quot;---计算机网络基础知识总结“https:&#x2F;&#x2F;blog.csdn.net&#x2F;fivedoumi&#x2F;article&#x2F;details&#x2F;51746798&quot;---网桥与交换机的区别“https:&#x2F;&#x2F;blog.csdn.net&#x2F;ypshowm&#x2F;article&#x2F;details&#x2F;8">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机网络基础知识001">
+<meta property="og:url" content="http://example.com/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="引用“https:&#x2F;&#x2F;www.runoob.com&#x2F;w3cnote&#x2F;summary-of-network.html&quot;---计算机网络基础知识总结“https:&#x2F;&#x2F;blog.csdn.net&#x2F;fivedoumi&#x2F;article&#x2F;details&#x2F;51746798&quot;---网桥与交换机的区别“https:&#x2F;&#x2F;blog.csdn.net&#x2F;ypshowm&#x2F;article&#x2F;details&#x2F;8">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%AC%A1%E5%88%92%E5%88%86001.JPG">
+<meta property="og:image" content="http://example.com/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%AC%A1%E5%88%92%E5%88%86002.JPG">
+<meta property="article:published_time" content="2022-01-02T04:54:01.000Z">
+<meta property="article:modified_time" content="2022-01-02T08:11:46.072Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="计算机网络基础知识">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%AC%A1%E5%88%92%E5%88%86001.JPG">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-计算机网络基础知识001" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/" class="article-date">
+  <time class="dt-published" datetime="2022-01-02T04:54:01.000Z" itemprop="datePublished">2022-01-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      计算机网络基础知识001
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>“<a target="_blank" rel="noopener" href="https://www.runoob.com/w3cnote/summary-of-network.html&quot;---%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93">https://www.runoob.com/w3cnote/summary-of-network.html&quot;---计算机网络基础知识总结</a><br>“<a target="_blank" rel="noopener" href="https://blog.csdn.net/fivedoumi/article/details/51746798&quot;---%E7%BD%91%E6%A1%A5%E4%B8%8E%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%9A%84%E5%8C%BA%E5%88%AB">https://blog.csdn.net/fivedoumi/article/details/51746798&quot;---网桥与交换机的区别</a><br>“<a target="_blank" rel="noopener" href="https://blog.csdn.net/ypshowm/article/details/89360384&quot;---ARP%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%E8%AF%A6%E8%A7%A3">https://blog.csdn.net/ypshowm/article/details/89360384&quot;---ARP地址解析协议详解</a><br>“<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_40462235/article/details/79840355&quot;---%E4%BB%80%E4%B9%88%E6%98%AFTCP%E5%8D%8F%E8%AE%AE">https://blog.csdn.net/weixin_40462235/article/details/79840355&quot;---什么是TCP协议</a></p>
+<h1 id="网络层级"><a href="#网络层级" class="headerlink" title="网络层级"></a>网络层级</h1><p><img src="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%AC%A1%E5%88%92%E5%88%86001.JPG" alt="网络层次划分001"><br><img src="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/%E7%BD%91%E7%BB%9C%E5%B1%82%E6%AC%A1%E5%88%92%E5%88%86002.JPG" alt="网络层次划分002"><br>层级并不相互独立,而是下层级作为上层级的基础服务,如同公路为卡车服务,卡车为仓库服务<br>OSI七层协议与TCP/IP四层或五层协议的区别是,一个是作为网络层级思想的实现指导,一个是思想的具体实现,为了降低使用门槛,并方便实际网络设备生产商实现功能,把几个层级合并为一个层级.</p>
+<h1 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h1><p>物理层就是数据传输的设备线路,用声音传播来类比的话就像铁路,网线就如同是铁轨,你在网线上用高低电位发送一个”01”,就如同你在铁轨上拿锤子敲两下,<br>虽然看着很原始,但是的确能传输信息,用到的设备除了网线还有”集线器”和”中继器”,<br>集线器的作用是把多根网线连接在一起利用广播的方式,如同现实中为了去不同的地方,把不同的铁路连接在一起,一个人发信息,集线器上的其他网线都能收到,就如同你敲击一根铁轨,其他铁轨上都能听到”咚”的一声.</p>
+<p>中继器的作用是为了解决网线太长的问题,总所周知,信号强度在传输载体里会随着距离增加而衰减,距离长到一定程度,信号就这么在网线里消耗没了,如同你敲击铁轨,趴在铁轨上距离两米听到的是刺耳的声音,但两公里外就几乎听不见了,<br>但有了中继器,就相当于在铁轨的中间有个人,他听到信号以后,会大力抡锤重新敲击铁轨,保证20公里外的人也能听到.</p>
+<h1 id="数据链路层"><a href="#数据链路层" class="headerlink" title="数据链路层"></a>数据链路层</h1><p>数据链路层在物理层提供的服务的基础上向网络层提供服务，其最基本的服务是将源自网络层来的数据可靠地传输到相邻节点的目标机网络层.说人话就是在铁路的基础上实施一些的控制规则,实现一些功能来方便信息运输.<br>数据链路必须具备一系列相应的功能，主要有：如何将数据组合成数据块，在数据链路层中称这种数据块为帧（frame），帧是数据链路层的传送单位；<br>如何控制帧在物理信道上的传输，包括如何处理传输差错，如何调节发送速率以使与接收方相匹配；<br>以及在两个网络实体之间提供数据链路通路的建立、维持和释放的管理。数据链路层在不可靠的物理介质上提供可靠的传输。<br>该层的作用包括：物理地址寻址、数据的成帧、流量控制、数据的检错、重发等。 </p>
+<p>为什么把数据分成数据块,想也知道,运黄金不可能把黄金全放一辆车里,运图纸肯定也是分开,不然出现意外丢失,直接完蛋,”帧”是分割单元,注意是单元不是大小单位,<br>因为每一”帧”不一定是一样大的,就像把图纸分组,目录部分可能就几页,细节部分可能有几吨,但是这两部分都要各用一辆车装走,于是”目录帧”就几K,”细节帧”可能有几M.</p>
+<p>物理地址寻址:每台上网设备出厂的时候都一个独一无二的物理地址,叫MAC地址,长度是48个二进制位，通常用12个十六进制数表示,有这个地址就知道数据从哪发出,要发给谁,你接收的数据是不是真的发给你的.</p>
+<p>流量控制:简单来说就如同铁路交通管制,这条铁路堵了,就让你走另外一条,都堵了就让你走排队最短的那条.</p>
+<p>数据检错重发:在帧中插入校验位,校验位会有规律的变化,大概就是第一帧校验位是1,第二帧是2,这样就能知道,有没有漏发,<br>即使第一帧因为排队比第七帧到达还要晚(极端情况下,可能有一帧在海底光缆里绕了地球好几圈才到达),也能根据校验位排列回正常顺序,如果缺了一帧还可以单独请求重发缺的一帧.</p>
+<p>局域网交换机的基本功能与网桥一样，具有帧转发、帧过滤和生成树算法功能。但是，交换机与网桥相比还是存在以下不同： </p>
+<p>1、交换机工作时，实际上允许许多组端口间的通道同时工作。所以，交换机的功能体现出不仅仅是一个网桥的功能，而是多个网桥功能的集合。即网桥一般分有两个端口，而交换机具有高密度的端口。 </p>
+<p>2、分段能力的区别<br>由于交换机能够支持多个端口，因此可以把网络系统划分成为更多的物理网段，这样使得整个网络系统具有更高的带宽。而网桥仅仅支持两个端口，所以，网桥划分的物理网段是相当有限的。 </p>
+<p>3、传输速率的区别<br>交换机与网桥数据信息的传输速率相比，交换机要快于网桥。 </p>
+<p>4、数据帧转发方式的区别<br>网桥在发送数据帧前，通常要接收到完整的数据帧并执行帧检测序列FCS后，才开始转发该数据帧。交换机具有存储转发和直接转发两种帧转发方式。直接转发方式在发送数据以前，不需要在接收完整个数据帧和经过32bit循环冗余校验码CRC的计算检查后的等待时间。</p>
+<h1 id="网络层"><a href="#网络层" class="headerlink" title="网络层"></a>网络层</h1><p>网络层的目的是实现两个端系统之间的数据透明传送，具体功能包括寻址和路由选择、连接的建立、保持和终止等。它提供的服务使传输层不需要了解网络中的数据传输和交换技术。<br>网络层中涉及众多的协议，其中包括最重要的协议，也是TCP/IP的核心协议——IP协议。<br>IP协议非常简单，仅仅提供不可靠、无连接的传送服务。IP协议的主要功能有：无连接数据报传输、数据报路由选择和差错控制。<br>与IP协议配套使用实现其功能的还有地址解析协议ARP、逆地址解析协议RARP、因特网报文协议ICMP、因特网组管理协议IGMP.</p>
+<p>IP地址不同于出厂就有的唯一MAC地址,IP地址可重复,因为局域网内部怎么给设备分配IP地址是不确定的,特别是在当前IPV4地址发完,局域网各种叠叠乐套娃的时候,很久以前可能A到B的地址路径是”127.0.0.1—127.0.0.2”,<br>但现在是”192.168.0.1—127.0.0.3—N个IP地址跳转—192.168.255.255”,在这种情况下,地址解析和逆地址解析协议就派上用场了,靠这两种协议,当你不知道MAC地址是啥,你就可以广播大嗓门喊一声,问问谁知道,听到的人还可能帮你问.<br>而为了IP报文能通过不同局域网,IP报文的大小要小于等于整条路径设备中使用的最小MTU,如同一辆卡车能拉多少货不是由卡车载重决定的,而是由最脆弱的一座桥的限重决定的.<br>但让报文小于MTU显然影响网速,一辆百吨王只拉两吨,过于浪费,但超载显然会车毁人亡,于是需要使用分割重组功能,把报文切碎放入物理帧,通过狭窄路段再组装起来,或者就这么碎着到达目的地再组装,就像一些桥梁会设置检查站和临时仓库,方便百吨王把货物拆分了过桥了再装到车上.</p>
+<p>路由器（Router），又称路径器，是工作在IP层上，可以连接不同的网络，能够选择数据传送路径并对数据进行转发的网络设备，属于第三层转接设备。被连接的两个IP子网在物理上既可能是局域网，也可能是广域网，他们具有不同的IP网络号，不能直接通信，需经过路由器进行转接。多协议的路由器可以连接使用完全不同的网络层、数据链路层和物理协议层的网络。单位内部网络与互联网的连接、不同单位网络之间的连接、单位内部不同子网之间的连接都需要使用到路由器.</p>
+<h1 id="传输层"><a href="#传输层" class="headerlink" title="传输层"></a>传输层</h1><p>端到端，即主机到主机的层次。传输层负责将上层数据分段并提供端到端的、可靠的或不可靠的传输。此外，传输层还要处理端到端的差错控制和流量控制问题。 传输层的任务是根据通信子网的特性，最佳的利用网络资源，为两个端系统的会话层之间，提供建立、维护和取消传输连接的功能，负责端到端的可靠数据传输。在这一层，信息传送的协议数据单元称为段或报文。 网络层只是根据网络地址将源结点发出的数据包传送到目的结点，而传输层则负责将数据可靠地传送到相应的端口.<br>TCP三次握手1.第一次握手：建立连接。客户端发送连接请求报文段，将SYN位置为1，Sequence Number为x;然后，客户端进入SYN_SEND状态，等待服务器的确认;</p>
+<p>2.第二次握手：服务器收到SYN报文段。服务器收到客户端的SYN报文段，需要对这个SYN报文段进行确认，设置Acknowledgment Number为x+1(Sequence Number+1);同时，自己自己还要发送SYN请求信息，将SYN位置为1，Sequence Number为y;服务器端将上述所有信息放到一个报文段(即SYN+ACK报文段)中，一并发送给客户端，此时服务器进入SYN_RECV状态;</p>
+<p>3.第三次握手：客户端收到服务器的SYN+ACK报文段。然后将Acknowledgment Number设置为y+1，向服务器发送ACK报文段，这个报文段发送完毕以后，客户端和服务器端都进入ESTABLISHED状态，完成TCP三次握手。</p>
+<p>完成了三次握手，客户端和服务器端就可以开始传送数据。以上就是TCP三次握手的总体介绍。</p>
+<p>TCP四次分手1.第一次分手：主机1(可以使客户端，也可以是服务器端)，设置Sequence Number和Acknowledgment Number，向主机2发送一个FIN报文段;此时，主机1进入FIN_WAIT_1状态;这表示主机1没有数据要发送给主机2了;</p>
+<p>2.第二次分手：主机2收到了主机1发送的FIN报文段，向主机1回一个ACK报文段，Acknowledgment Number为Sequence Number加1;主机1进入FIN_WAIT_2状态;主机2告诉主机1，我也没有数据要发送了，可以进行关闭连接了;</p>
+<p>3.第三次分手：主机2向主机1发送FIN报文段，请求关闭连接，同时主机2进入CLOSE_WAIT状态;</p>
+<p>4.第四次分手：主机1收到主机2发送的FIN报文段，向主机2发送ACK报文段，然后主机1进入TIME_WAIT状态;主机2收到主机1的ACK报文段以后，就关闭连接;此时，主机1等待2MSL后依然没有收到回复，则证明Server端已正常关闭，那好，主机1也可以关闭连接了。</p>
+<p>为什么要三次握手?</p>
+<p>既然总结了TCP的三次握手，那为什么非要三次呢?怎么觉得两次就可以完成了。那TCP为什么非要进行三次连接呢?在谢希仁的《计算机网络》中是这样说的：为了防止已失效的连接请求报文段突然又传送到了服务端，因而产生错误。<br>在书中同时举了一个例子，如下：<br>“已失效的连接请求报文段”的产生在这样一种情况下：client发出的第一个连接请求报文段并没有丢失，<br>而是在某个网络结点长时间的滞留了，以致延误到连接释放以后的某个时间才到达server。<br>本来这是一个早已失效的报文段。但server收到此失效的连接请求报文段后，就误认为是client再次发出的一个新的连接请求。<br>于是就向client发出确认报文段，同意建立连接。假设不采用“三次握手”，那么只要server发出确认，新的连接就建立了。<br>由于现在client并没有发出建立连接的请求，因此不会理睬server的确认，也不会向server发送数据。但server却以为新的运输连接已经建立，并一直等待client发来数据。<br>这样，server的很多资源就白白浪费掉了。采用“三次握手”的办法可以防止上述现象发生。<br>例如刚才那种情况，client不会向server的确认发出确认。server由于收不到确认，就知道client并没有要求建立连接。”<br>这就很明白了，防止了服务器端的一直等待而浪费资源。</p>
+<p>为什么要四次分手?</p>
+<p>那四次分手又是为何呢?TCP协议是一种面向连接的、可靠的、基于字节流的运输层通信协议。TCP是全双工 模式，这就意味着，当主机1发出FIN报文段时，只是表示主机1已经没有数据要发送了，主机1告诉主机2， 它的数据已经全部发送完毕了;但是，这个时候主机1还是可以接受来自主机2的数据;当主机2返回ACK报文 段时，表示它已经知道主机1没有数据发送了，但是主机2还是可以发送数据到主机1的;当主机2也发送了FIN 报文段时，这个时候就表示主机2也没有数据要发送了，就会告诉主机1，我也没有数据要发送了，之后彼此 就会愉快的中断这次TCP连接。如果要正确的理解四次分手的原理，就需要了解四次分手过程中的状态变化。</p>
+<p>FIN_WAIT_1: 这个状态要好好解释一下，其实FIN_WAIT_1和FIN_WAIT_2状态的真正含义都是表示等 待对方的FIN报文。而这两种状态的区别是：FIN_WAIT_1状态实际上是当SOCKET在ESTABLISHED状态时， 它想主动关闭连接，向对方发送了FIN报文，此时该SOCKET即进入到FIN_WAIT_1状态。而当对方回应ACK报 文后，则进入到FIN_WAIT_2状态，当然在实际的正常情况下，无论对方何种情况下，都应该马上回应ACK 报文，所以FIN_WAIT_1状态一般是比较难见到的，而FIN_WAIT_2状态还有时常常可以用netstat看到。 (主动方)</p>
+<p>FIN_WAIT_2：上面已经详细解释了这种状态，实际上FIN_WAIT_2状态下的SOCKET，表示半连接，也即 有一方要求close连接，但另外还告诉对方，我暂时还有点数据需要传送给你(ACK信息)，稍后再关闭连接。 (主动方)</p>
+<p>CLOSE_WAIT：这种状态的含义其实是表示在等待关闭。怎么理解呢?当对方close一个SOCKET后发送FIN 报文给自己，你系统毫无疑问地会回应一个ACK报文给对方，此时则进入到CLOSE_WAIT状态。接下来呢，实 际上你真正需要考虑的事情是察看你是否还有数据发送给对方，如果没有的话，那么你也就可以 close这个 SOCKET，发送FIN报文给对方，也即关闭连接。所以你在CLOSE_WAIT状态下，需要完成的事情是等待你去关 闭连接。(被动方)</p>
+<p>LAST_ACK: 这个状态还是比较容易好理解的，它是被动关闭一方在发送FIN报文后，最后等待对方的ACK报 文。当收到ACK报文后，也即可以进入到CLOSED可用状态了。(被动方)</p>
+<p>TIME_WAIT: 表示收到了对方的FIN报文，并发送出了ACK报文，就等2MSL后即可回到CLOSED可用状态了。 如果FINWAIT1状态下，收到了对方同时带FIN标志和ACK标志的报文时，可以直接进入到TIME_WAIT状态，而无 须经过FIN_WAIT_2状态。(主动方)</p>
+<p>CLOSED: 表示连接中断。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/" data-id="ckxwza4bm0003gkox8w1w9sxe" data-title="计算机网络基础知识001" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">计算机网络基础知识</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Java基础知识回顾</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaSE-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="tag">JavaSE,学习笔记</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" rel="tag">博客测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" rel="tag">计算机网络基础知识</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/JavaSE-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" style="font-size: 10px;">JavaSE,学习笔记</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">博客测试</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" style="font-size: 10px;">计算机网络基础知识</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/12/">December 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/01/02/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86001/">计算机网络基础知识001</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/08/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%BC%96%E8%BE%91/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%9B%9E%E9%A1%BE/">Java基础知识回顾</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/06/BlogTest001/">BlogTest001</a>
+          </li>
+        
+          <li>
+            <a href="/2021/12/06/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2022 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
